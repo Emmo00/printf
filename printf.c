@@ -1,4 +1,4 @@
-#include"printf.h"
+#include"main.h"
 /**
  * _printf - prints formated string to stdout
  * @format - format string
@@ -19,12 +19,8 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			n++;
 		}
-		else
+		else if (format[i - 1] == '%')
 		{
-			if (format[i] == '%' && format[i - 1] != '%')
-			{
-				continue;
-			}
 			get_specifier(format[i])(&args, &n);
 		}
 		i++;

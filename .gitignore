@@ -1,2 +1,5 @@
 *.txt
 *.json
+main.c
+*.exe
+*.out

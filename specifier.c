@@ -1,4 +1,4 @@
-#include"printf.h"
+#include"main.h"
 /**
  * spec_c - handles the c specifier
  * @args: variable list
@@ -7,8 +7,9 @@
 */
 void spec_c(va_list *args, int *n)
 {
-	_putchar(va_arg(*args, char));
-	*n++;
+	(void) *n;
+	_putchar(va_arg(*args, int));
+	*n = *n + 1;
 }
 /**
  * spec_c - handles the s specifier
@@ -22,7 +23,7 @@ void spec_s(va_list *args, int *n)
 	while (str)
 	{
 		_putchar(*str++);
-		*n++;
+		*n = *n + 1;
 	}
 }
 /**
@@ -33,6 +34,10 @@ void spec_s(va_list *args, int *n)
 */
 void spec_per(va_list *args, int *n)
 {
-	_putchar("%");
-	*n++;
+	char per;
+	(void) args;
+
+	per = '%';
+	_putchar(per);
+	*n = *n + 1;
 }

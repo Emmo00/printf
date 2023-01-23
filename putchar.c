@@ -1,4 +1,4 @@
-#include"printf.h"
+#include"main.h"
 /**
  * _putchar - prints character to stdout
  * @c: character
