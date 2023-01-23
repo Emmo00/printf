@@ -3,7 +3,7 @@
  * spec_c - handles the c specifier
  * @args: variable list
  * @n: pointer to variable that tracks number of characters printed
- * Return: pointer to number of character printed
+ * Return: nothing
 */
 void spec_c(va_list *args, int *n)
 {
@@ -11,10 +11,10 @@ void spec_c(va_list *args, int *n)
 	*n++;
 }
 /**
- * spec_c - handles the c specifier
+ * spec_c - handles the s specifier
  * @args: variable list
  * @n: pointer to variable that tracks number of characters printed
- * Return: pointer to number of character printed
+ * Return: nothing
 */
 void spec_s(va_list *args, int *n)
 {
@@ -26,10 +26,10 @@ void spec_s(va_list *args, int *n)
 	}
 }
 /**
- * spec_c - handles the c specifier
+ * spec_c - handles the % specifier
  * @args: variable list
  * @n: pointer to variable that tracks number of characters printed
- * Return: pointer to number of character printed
+ * Return: nothing
 */
 void spec_per(va_list *args, int *n)
 {
