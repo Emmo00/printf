@@ -21,7 +21,7 @@ void spec_s(va_list *args, int *n)
 {
 	char *str = va_arg(*args, char*);
 
-	while (str)
+	while (*str)
 	{
 		_putchar(*str++);
 		*n = *n + 1;
