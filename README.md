@@ -1,4 +1,4 @@
-# ALX Team project 
+# ALX Team project
 *by Obiora Daniel and Nwafor Emmanuel*
 - printf \
 Fuction that prints formated string to stdout

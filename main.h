@@ -6,6 +6,11 @@
 #include<stddef.h>
 
 void _putchar(char);
+/**
+ * struct spec - specifier stuct to be easily called by get_specifier
+ * @sp: specifier character to check
+ * @f: pointer to a specifier function
+ */
 typedef struct spec
 {
 	char *sp;

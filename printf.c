@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  * _printf - prints formated string to stdout
- * @format - format string
+ * @format: format string
  * Return: number of characters printed to stdout
 */
 int _printf(const char *format, ...)
@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 	i = 0;
 	n = 0;
 	va_start(args, format);
-	while(format[i])
+	while (format[i])
 	{
 		if (format[i] != '%' && format[i - 1] != '%')
 		{

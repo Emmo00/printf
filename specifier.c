@@ -12,7 +12,7 @@ void spec_c(va_list *args, int *n)
 	*n = *n + 1;
 }
 /**
- * spec_c - handles the s specifier
+ * spec_s - handles the s specifier
  * @args: variable list
  * @n: pointer to variable that tracks number of characters printed
  * Return: nothing
@@ -20,6 +20,7 @@ void spec_c(va_list *args, int *n)
 void spec_s(va_list *args, int *n)
 {
 	char *str = va_arg(*args, char*);
+
 	while (str)
 	{
 		_putchar(*str++);
@@ -27,7 +28,7 @@ void spec_s(va_list *args, int *n)
 	}
 }
 /**
- * spec_c - handles the % specifier
+ * spec_per - handles the % specifier
  * @args: variable list
  * @n: pointer to variable that tracks number of characters printed
  * Return: nothing
