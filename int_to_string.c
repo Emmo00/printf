@@ -15,3 +15,17 @@ void print_number(int number, int *n)
 	_putchar((number % 10) + '0');
 	*n = *n + 1;
 }
+/**
+ * print_binary - prints an integer as binary to stdout
+ * @number: int
+ * @n: number of characters printed
+ * Return: nothing
+ */
+void print_binary(int number, int *n)
+{
+	if (number == 0)
+		return;
+	print_binary(number / 2, n);
+	_putchar((number % 2) + '0');
+	*n = *n + 1;
+}

@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 	int i, n;
 	va_list args;
 	int flag;
-	void (*f)(va_list*, int*);
+	void (*func)(va_list*, int*);
 
 	i = 0;
 	n = 0;
@@ -28,10 +28,10 @@ int _printf(const char *format, ...)
 			n++;
 		} else
 		{
-			f = get_specifier(format[i]);
-			if (f != NULL)
+			func = get_specifier(format[i]);
+			if (func != NULL)
 			{
-				f(&args, &n);
+				func(&args, &n);
 			} else
 			{
 				_putchar(format[i - 1]);

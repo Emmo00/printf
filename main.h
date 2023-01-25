@@ -23,8 +23,10 @@ void spec_s(va_list*, int*);
 void spec_per(va_list*, int *);
 void spec_d(va_list*, int*);
 void spec_i(va_list*, int*);
+void spec_b(va_list*, int*);
 
 void print_number(int, int*);
+void print_binary(int, int*);
 
 int _printf(const char *format, ...);
 
