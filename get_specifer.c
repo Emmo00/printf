@@ -11,6 +11,8 @@ void (*get_specifier(char s))(va_list *, int *)
 		{"c", spec_c},
 		{"s", spec_s},
 		{"%", spec_per},
+		{"d", spec_d},
+		{"i", spec_i},
 		{NULL, NULL}
 	};
 	int j;
