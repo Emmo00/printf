@@ -11,7 +11,7 @@ void print_number(int number, int *n)
 	{
 		return;
 	}
-	*n = *n + 1;
 	print_number(number / 10, n);
 	_putchar((number % 10) + '0');
+	*n = *n + 1;
 }
