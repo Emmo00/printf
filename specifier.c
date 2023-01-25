@@ -23,12 +23,6 @@ void spec_s(va_list *args, int *n)
 
 	if (str == NULL)
 	{
-		char *null = "(null)";
-
-		while (*null)
-		{
-			_putchar(*null++);
-		}
 		return;
 	}
 	while (*str)
