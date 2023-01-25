@@ -26,7 +26,5 @@ void (*get_specifier(char s))(va_list *, int *)
 		}
 		j++;
 	}
-	_putchar('%');
-	_putchar(s);
 	return (specs[j].f);
 }
