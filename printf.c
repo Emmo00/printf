@@ -30,7 +30,13 @@ int _printf(const char *format, ...)
 		{
 			f = get_specifier(format[i]);
 			if (f != NULL)
+			{
 				f(&args, &n);
+			} else
+			{
+				_putchar(format[i - 1]);
+				_putchar(format[i]);
+			}
 			flag = !flag;
 		}
 		i++;
