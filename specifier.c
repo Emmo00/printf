@@ -42,3 +42,26 @@ void spec_per(va_list *args, int *n)
 	_putchar(per);
 	*n = *n + 1;
 }
+/**
+ * spec_d - handles the d specifier
+ * @args: variable list
+ * @n: pointer to variable that tracks number of characters printed
+ * Return: nothing
+*/
+void spec_d(va_list *args, int *n)
+{
+	int number;
+	
+	number = va_arg(*args, int);
+	print_number(number, n);
+}
+/**
+ * spec_i - handles the i specifier
+ * @args: variable list
+ * @n: pointer to variable that tracks number of characters printed
+ * Return: nothing
+*/
+void spec_i(va_list *args, int *n)
+{
+	spec_d(args, n);
+}
