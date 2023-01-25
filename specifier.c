@@ -62,6 +62,10 @@ void spec_d(va_list *args, int *n)
 		number = number * (-1);
 		_putchar('-');
 	}
+	if (number == 0)
+	{
+		_putchar('0');
+	}
 	print_number(number, n);
 }
 /**
