@@ -9,6 +9,7 @@ int _printf(const char *format, ...)
 	int i, n;
 	va_list args;
 	int flag;
+	void (*f)(va_list*, int*);
 
 	i = 0;
 	n = 0;
@@ -27,7 +28,9 @@ int _printf(const char *format, ...)
 			n++;
 		} else
 		{
-			get_specifier(format[i])(&args, &n);
+			f = get_specifier(format[i]);
+			if (f != NULL)
+				f(&args, &n);
 			flag = !flag;
 		}
 		i++;

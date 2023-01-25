@@ -13,7 +13,7 @@ void _putchar(char);
  */
 typedef struct spec
 {
-	char *sp;
+	char sp;
 	void (*f)(va_list *list, int *n);
 } spec_op;
 

@@ -8,23 +8,25 @@
 void (*get_specifier(char s))(va_list *, int *)
 {
 	spec_op specs[] = {
-		{"c", spec_c},
-		{"s", spec_s},
-		{"%", spec_per},
-		{"d", spec_d},
-		{"i", spec_i},
-		{NULL, NULL}
+		{'c', spec_c},
+		{'s', spec_s},
+		{'%', spec_per},
+		{'d', spec_d},
+		{'i', spec_i},
+		{'\0', NULL}
 	};
 	int j;
 
 	j = 0;
 	while (specs[j].sp)
 	{
-		if (*(specs[j].sp) == s)
+		if (specs[j].sp == s)
 		{
 			return (specs[j].f);
 		}
 		j++;
 	}
+	_putchar('%');
+	_putchar(s);
 	return (specs[j].f);
 }
