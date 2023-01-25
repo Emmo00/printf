@@ -1,4 +1,10 @@
 #include"main.h"
+/**
+ * print_number - prints all digits of an integer to stdout
+ * @number: number to be printed
+ * @n: number of character printed tracker
+ * Return: nothing
+ */
 void print_number(int number, int *n)
 {
 	if (number == 0)

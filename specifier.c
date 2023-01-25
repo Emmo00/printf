@@ -51,7 +51,7 @@ void spec_per(va_list *args, int *n)
 void spec_d(va_list *args, int *n)
 {
 	int number;
-	
+
 	number = va_arg(*args, int);
 	print_number(number, n);
 }
